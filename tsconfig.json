@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./build",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "~types/*": [
+        "./src/types/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@repositories/*": [
+        "./src/repositories/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "@types"
+    ]
+  },
+  "include": [
+    "**/*",
+    "package.json"
+  ],
+  "exclude": [
+    "build",
+    "node_modules",
+    "logs/**"
+  ]
+}

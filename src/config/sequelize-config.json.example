@@ -1,0 +1,30 @@
+{
+    "local": {
+        "username": "username",
+        "password": "password",
+        "database": "database",
+        "host": "host",
+        "dialect": "dialect"
+    },
+    "development": {
+        "username": "username",
+        "password": "password",
+        "database": "database",
+        "host": "host",
+        "dialect": "dialect"
+    },
+    "staging": {
+        "username": "username",
+        "password": "password",
+        "database": "database",
+        "host": "host",
+        "dialect": "dialect"
+    },
+    "production": {
+        "username": "username",
+        "password": "password",
+        "database": "database",
+        "host": "host",
+        "dialect": "dialect"
+    }
+}

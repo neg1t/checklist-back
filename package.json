@@ -1,0 +1,56 @@
+{
+  "name": "checklist-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "tsc && nodemon ./src/index.ts",
+    "migrate:undo:local": "npx sequelize-cli db:migrate:undo --env local",
+    "migrate:undo:development": "npx sequelize-cli db:migrate:undo --env development",
+    "migrate:undo:staging": "npx sequelize-cli db:migrate:undo --env staging",
+    "migrate:undo:production": "npx sequelize-cli db:migrate:undo --env production",
+    "migrate:local": "npx sequelize-cli db:migrate --env local",
+    "migrate:development": "npx sequelize-cli db:migrate --env development",
+    "migrate:staging": "npx sequelize-cli db:migrate --env staging",
+    "migrate:production": "npx sequelize-cli db:migrate --env production",
+    "skeleton": "npx sequelize-cli migration:generate --name"
+  },
+  "keywords": [],
+  "author": "neg1t",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "express-jwt": "^7.7.5",
+    "express-validator": "^6.14.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1",
+    "sequelize-typescript": "^2.1.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.6.3",
+    "cross-env": "^7.0.3",
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "_moduleAliases": {
+    "@utils": "src/utils",
+    "@models": "src/models",
+    "~types": "src/types",
+    "@controllers": "src/controllers",
+    "@repositories": "src/repositories",
+    "@services": "src/services",
+    "@config": "src/config"
+  }
+}
